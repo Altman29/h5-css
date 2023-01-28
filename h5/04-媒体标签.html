@@ -1,0 +1,26 @@
+<!-- src中 ./ 代表当前位置 -->
+<!-- alt替换文本，当图片加载不出来时候显示替换文本 -->
+<!-- title：鼠标悬停，提示文本，其他标签也能使用 -->
+<!-- width宽、height高，若只填写一个，会等比例缩放(好处是图片不会变形太严重) -->
+<!-- 媒体引用分为绝对路径和相对路径，工作中只用相对路径（从当前位置开始找目标文件的过程） -->
+<!-- 相对路径分三类：同级、下级、上级 -->
+<!-- 
+    同级: /. 或者直接写文件名
+    下级: 目标文件夹/具体文件名
+    上级: ../具体文件名
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>媒体标签</h1>
+    <img src="./04.jpeg" alt="小老虎" title="提示文本" width="200">
+    <img src="images/04.jpeg" alt="小老虎" title="提示文本111" width="200">
+    <img src="" alt="小老虎" title="提示文本111" width="200">
+</body>
+</html>

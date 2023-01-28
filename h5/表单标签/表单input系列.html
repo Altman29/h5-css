@@ -1,0 +1,125 @@
+<!-- 
+    input系列标签
+    
+    场景：在网页中显示收集用户信息的表达效果，如：登录页、注册页
+    
+    标签名：input
+        input标签可以通过type属性值不同，展示不同的效果
+    
+        type属性值(8)：
+    text        文本框，用于输入单行文本
+    password    密码框，用于输入密码
+    radio       单选框，用于多选一
+    checkbox    多选框，用于多选多
+    file        文件选择，用于上传文件
+    submit      提交按钮，用于提交
+    reset       重置按钮，用于重置
+    button      普通按钮，默认无功能，之后配合js添加功能
+    一个标签通过属性展示不同效果。
+
+    单选功能
+    默认状态下，radio并没有实现单选功能。
+    需要使用name属性分组，在相同name属性值的单选框为一组，一组中同时只能一个被选中
+    checked默认选中
+
+    文件
+    multiple上传多文件
+
+    input
+    type为submit，提交按钮，点击后提交数据给后端服务器
+    type为reset，重置按钮，点击后恢复表单默认值
+    type为button，普通按钮，默认无功能，配合js添加功能
+        给button按钮添加文字，使用属性value
+    如需要实现以上按钮功能，需要配合form标签使用；
+    form使用方式，用form标签把表单标签一起包裹起来即可；
+
+    button
+    type属性也分为submit、reset、button
+    button标签是双标签，更便于包裹内容，文字、图片等。
+
+    下拉菜单select
+    场景：提供多个选中项的控件
+    标签组成：select+option
+    常见属性：selected默认选中
+
+    文本域textarea
+    场景：提供可输入多行文本的表单控件
+    标签名：textarea
+    场景属性：cols：规定文本域可见宽度；rows：规定文本域可见行数；
+    注意：右下角可以拖拽改变大小
+    实际开发时对于样式效果推荐css设置
+
+    label标签
+    场景：常用于绑定内容与表单标签的关系
+    使用方法1 复杂
+        1.使用label标签把内容如文本，包裹起来
+        2.在表单标签上添加id属性
+        3.在label标签的for属性中设置对应id属性值
+    使用方法2 简单
+        1.直接使用label标签把内容如文本，和表单标签一起包裹起来
+        2.需要把label标签的for属性删除即可
+
+    常用属性(属性不分先后顺序)
+    placeholder     占位符
+    name            分组
+    checked         默认选中
+    selected        默认选中
+    multiple        上传多个文件
+    value           字面值
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="action1">
+        昵称: <input type="text" placeholder="占位符">
+        <br>
+        密码: <input type="password" placeholder="请输入密码">
+        <br>
+        单选框: <input type="radio" name="gender">男
+        <input type="radio" name="gender" checked>女
+        <br>
+        多选框: <input type="checkbox" checked>
+        <br>
+        上传文件: <input type="file" multiple>
+        <br>
+        <input type="submit" value="免费注册">
+        <input type="reset">
+        <input type="button" value="普通按钮">
+    </form>
+
+    <br>
+    <h3>button标签</h3>
+    <button type="submit">提交按钮</button>
+    <button type="reset">重置按钮</button>
+    <button type="button">普通按钮</button>
+
+    <br>
+    <h3>select下拉菜单</h3>
+    <select name="city">
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option>
+        <option value="guangzhou" selected>广州</option>
+        <option value="shenzhen">深圳</option>
+    </select>
+
+    <br>
+    <h3>textarea文本域</h3>
+    <textarea name="textarea" cols="3" rows="2"></textarea>
+
+    <br>
+    <h3>label标签</h3>
+    性别：
+    方法1:<input type="radio" name="sex" id="man"><label for="man">男</label>
+    方法2:<label><input type="radio" name="sex" id="woman">女</label>
+</body>
+
+</html>

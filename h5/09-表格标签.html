@@ -1,0 +1,81 @@
+<!-- 
+
+    option+shift+F 格式化代码
+    command+shift+E 资源管理器
+    
+    table   表格整体，用于包裹tr
+    tr      行,用于包裹td
+    td      列，用于包裹内容
+    
+    常用属性:实际开发中宽高用css控制
+    border  边框宽度
+    width   表格宽度
+    height  表格高度
+
+    表格标题和表头单元格标签
+    caption 表格大标题（caption写在table内部）
+    th      表头单元格（th写在tr内部用于替换td）
+    
+    表格的结构标签：让表格的内容结构分组，突出表格的不同部分（头部、主体、底部）
+    thead   表格头部
+    tbody   表格主体
+    tfoot   表格底部
+    表格结构标签内部用于包裹tr标签
+
+    合并单元格：将水平或垂直多个单元格合并成一个单元格（跨行合并、跨列合并）
+    合并单元格步骤
+    1.明确合并哪几个单元格
+    2.通过左上原则，确定保留谁删除谁
+        左下合并：只保留最上的，删除其他
+        左右合并：只保留最左的，删除其他
+    3.保留的单元格设置：跨行合并rowspan、或者跨列合并colspan
+    注意，只能同结构标签中的单元格可以合并，不能跨结构标签合并（不能跨thead、tbody、tfoot）
+    
+    
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <b>table基本使用</b>
+    <table border="1" width="500" height="300">
+        <caption><strong>表格标题</strong></caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小哥哥</td>
+                <td rowspan="2">100分</td>
+                <td>牛批</td>
+            </tr>
+            <tr>
+                <td>小老虎</td>
+                <!-- <td>90分</td> -->
+                <td>牛批卡拉斯</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="2">总结1</td>
+                <!-- <td>总结2</td> -->
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
