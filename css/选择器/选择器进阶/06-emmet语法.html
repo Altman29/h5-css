@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        /* lh30 即可生成 */
+        line-height: 30;
+
+
+        /* fw700 即可生成 */
+        font-weight: 700;
+
+        /* w300 即可生成 */
+        width: 300px;
+
+        /* bgc$fff 即可生成 */
+        background-color: #fff;
+
+        /* 通常就是首字母加值，即可生成 */
+
+        /* 
+        甚至可以用+号。!!!
+        w300+h200+bgc 即可生成!!!!
+        */
+        width: 300px;
+        height: 200px;
+        background-color: #fff;
+    }
+</style>
+<body>
+
+    <!-- 标签不需要写尖括号, 直接div 回车或tab即可生成标签 -->
+    <div></div>
+    <h1></h1>
+
+
+    <!-- 生成带类名的div , 直接.box 回车或tab即可生成带类名为box的div-->
+    <div class="box"></div>
+    
+    <!-- 生成带类名的p， 直接p.one即可生成 -->
+    <p class="one"></p>
+
+
+    <!-- 同理，生成带id的div，div#id 即可生成 -->
+    <div id="main"></div>
+    <p id="title"></p>
+
+    <!-- 交集选择器 p.red#one 即可生成-->
+    <p class="red" id="one"></p>
+
+
+    <!-- div同级p， div+p -->
+    <div></div>
+    <p></p>
+
+    <!-- 同级多个, div*3 -->
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- 子级 div>p -->
+    <div>
+        <p></p>
+    </div>
+
+    <!-- ul>li -->
+    <ul>
+        <li></li>
+    </ul>
+
+    <!-- ul里面有4个li -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- ul里面有3个li，li里面有文字,ul>li{111}*3 -->
+    <ul>
+        <li>111</li>
+        <li>111</li>
+        <li>111</li>
+    </ul>
+
+    <!-- ul里3个li，li文字：1，2，3, ul>li{$}*3 -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ul>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+    </ul>
+
+
+</body>
+</html>
