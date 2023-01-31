@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        继承 < 通配符选择器 < 标签选择器 < 类选择器 < id选择器 < 行内样式 < !important
+        !important 不要给继承的添加，自己有就不听父类的。
+        */
+        div {
+            color: green !important;
+        }
+
+        body {
+            color: red;
+        }
+
+        .box {
+            color: blue;
+        }
+
+        #box {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 当一个标签使用了多个选择器，样式冲突的时候，到底谁生效 -->
+
+    <div class="box" id="box" style="color: deeppink;">测试优先级</div>
+
+</body>
+
+</html>
