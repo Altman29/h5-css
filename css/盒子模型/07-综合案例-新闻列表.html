@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* 去除默认内外边距 */
+            margin: 0;
+            padding: 0;
+            /* 所有的标签都有可能添加内边距或border，都设置内减模式 */
+            box-sizing: border-box;
+        }
+
+        .news {
+            width: 500px;
+            height: 400px;
+            border: 1px solid #ccc;
+            margin: 50px auto;
+            padding: 42px 30px 0;
+        }
+
+        .news h2 {
+            border-bottom: 1px solid #ccc;
+            font-size: 30px;
+            /* 表示行高是1倍，是字体大小的1倍 */
+            line-height: 1;
+            padding-bottom: 9px;
+        }
+
+        /* 去掉列表符号 */
+        ul {
+            list-style: none;
+        }
+
+        .news li {
+            height: 50px;
+            border-bottom: 1px dashed #ccc;
+            padding-left: 28px;
+            line-height: 50px;
+        }
+
+        ul a {
+            font-size: 18px;
+            color: #666;
+            text-decoration: none;
+        }
+
+
+        /* 
+        padding
+        四个值: 上 右 下 左
+        三个值: 上 左右 下
+        俩个值：上下 左右
+        一个值： 全部
+        
+        */
+    </style>
+</head>
+
+<body>
+
+    <div class="news">
+        <h2>最新文章/New Articles</h2>
+        <!-- ul>li>a meta语法 -->
+        <ul>
+            <li><a href="#">乌克兰获得德国🇩🇪虎式坦克援助</a></li>
+            <li><a href="#">乌克兰获得德国🇩🇪虎式坦克援助</a></li>
+            <li><a href="#">乌克兰获得德国🇩🇪虎式坦克援助</a></li>
+            <li><a href="#">乌克兰获得德国🇩🇪虎式坦克援助</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
