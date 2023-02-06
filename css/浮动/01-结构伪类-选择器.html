@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child {
+            /* 第一个li */
+            background-color: red;
+        }
+
+        li:last-child {
+            /* 最后一个 */
+            background-color: #000;
+        }
+
+        li:nth-child(3) {
+            /* 第三个li */
+            background-color: green;
+        }
+
+        li:nth-last-child(4) {
+            /* 倒数第4个li */
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        结构伪类选择器
+        目标: 能够使用结构伪类选择器在HTML中定位元素
+        作用与优势:
+        1.作用: 根据元素在html中的结构关系查找元素
+        2.优势: 减少对于HTML中类的依赖，有利于保持代码整洁
+        3.场景: 常用于查找某父级选择器中的子元素
+
+        选择器:
+        E:first-child{}       匹配父元素中第一个子元素，并且是E元素
+        E:last-child{}        匹配父元素中最后一个子元素，并且是E元素
+        E:nth-child(n){}      匹配父元素中第n个子元素，并且是E元素(常用)
+        E:nth-last-child(n){} 匹配父元素中倒数第n个子元素，并且是E元素
+     -->
+
+
+    <!-- ul>li{这是第$个li}*8 -->
+    <ul>
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+        <li>这是第4个li</li>
+        <li>这是第5个li</li>
+        <li>这是第6个li</li>
+        <li>这是第7个li</li>
+        <li>这是第8个li</li>
+    </ul>
+
+
+</body>
+
+</html>

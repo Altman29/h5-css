@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            /* 
+            div转行内块。  但是 他们俩个之间有间距！ 
+            因为：写标签的时候，换行了！来个div换行。 浏览器解析行内、或者行内块标签 如果换行，会产生一个空格的间距。
+
+            所以要用浮动去解决。
+            浮动 就是为了解决，让块级元素完美的在一横排展示。
+            早期: 是为了图文环绕效果。
+            现在: 为了网页布局。
+            */
+            display: inline-block;
+        }
+
+        .one {
+            background-color: pink;
+        }
+
+        .two {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        浮动的作用: 就是让块级元素完美的在一横排展示。
+        
+        体验一下不完美的问题: 块级转行内块级。
+     -->
+
+    <div class="one">one</div>
+    <div class="two">two</div>
+
+
+</body>
+
+</html>

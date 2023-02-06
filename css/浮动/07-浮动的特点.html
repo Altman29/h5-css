@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 
+            one飘起来了，不在占用标准流。one飘起来了，two就上来了。
+            脱标：脱离了，但又没完全脱。盒子脱离了。 浮动元素比标准流高半个级别。可以覆盖标准流中的元素。
+             */
+            float: left;
+            /* 外边距，拒绝顶对齐。 */
+            margin-top: 50px;
+        }
+
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* 
+            浮动找浮动：下一个浮动元素会在上一个浮动元素的后面左右浮动,且顶对齐。
+             */
+             float: left;
+        }
+
+        .three {
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        浮动的特点: 浮动的元素会脱离标准流（简称：脱标），在标准流中不占位置。
+     -->
+
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+</body>
+
+</html>
