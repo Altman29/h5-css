@@ -42,11 +42,21 @@
 
     <!-- 
         浮动的特点: 浮动的元素会脱离标准流（简称：脱标），在标准流中不占位置。
+        浮动后的标签具备行内块特点。
+        
+        浮动后，margin 0 auto不生效（居中）。
      -->
 
     <div class="one">one</div>
     <div class="two">two</div>
     <div class="three">three</div>
+
+    <!-- 
+        CSS书写顺序
+        1.浮动/display
+        2.盒子模型 margin border padding 宽高 背景色
+        3.文字样式
+     -->
 </body>
 
 </html>
