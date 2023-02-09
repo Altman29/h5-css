@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学成在线</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 
+        布局: 从外到内，从上到下，从左到右。
+        css: 浮动/display，盒子模型，文字样式等
+     -->
+
+    <!-- 头部header: 负责头部区域的样式，wrapper负责版心效果 -->
+    <div class="header wrapper">
+        <h1>
+            <a href="#"><img src="./images/logo.png" alt=""></a>
+        </h1>
+
+        <!-- 导航 -->
+        <div class="nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">职业规划</a></li>
+            </ul>
+        </div>
+
+        <!-- 搜索 -->
+        <div class="search">
+            <input type="text" placeholder="请输入关键词">
+            <button></button>
+            <!-- 
+                行内块换行写的行，会产生一个空格，就变到下一行,解决办法就是浮动！ 
+                如果上不去，就计算宽度是否能满足。
+            -->
+        </div>
+
+        <!-- 用户 -->
+        <div class="user">
+            <img src="./images/user.png" alt="">
+            <span>hanmeimei</span>
+        </div>
+    </div>
+
+    <!-- 轮播图banner -->
+    <div class="banner">
+        <div class="wrapper">
+            <!-- .left+.right -->
+            <div class="left">
+                <ul>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2>我的课程表</h2>
+                <div class="content">
+                    <dl>
+                        <dt>继续学习程序语言设计</dt>
+                        <dd>正在学时，使用对象</dd>
+                    </dl>
+                    <dl>
+                        <dt>继续学习程序语言设计</dt>
+                        <dd>正在学时，使用对象</dd>
+                    </dl>
+                    <dl>
+                        <dt>继续学习程序语言设计</dt>
+                        <dd>正在学时，使用对象</dd>
+                    </dl>
+                </div>
+                <a href="#" class="more">全部课程</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 精品推荐 -->
+    <div class="goods wrapper">
+        <h2>精品推荐</h2>
+        <ul>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">Mysql</a></li>
+            <li><a href="#">Redis</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <a href="#" class="edit">修改兴趣</a>
+    </div>
+
+    <!-- 精品推荐课程 -->
+    <div class="box wrapper">
+        <div class="title">
+            <h2>精品推荐</h2>
+            <a href="#">查看更多</a>
+        </div>
+        <div class="content">
+            <ul>
+                <li><a href="#">
+                        <img src="./images/course07.png" alt="">
+                        <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                        <p><span>高级</span> · 1216人正在看</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./images/course01.png" alt="">
+                        <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                        <p><span>高级</span> · 1216人正在看</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./images/course02.png" alt="">
+                        <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                        <p><span>高级</span> · 1216人正在看</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./images/course03.png" alt="">
+                        <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                        <p><span>高级</span> · 1216人正在看</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./images/course04.png" alt="">
+                        <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                        <p><span>高级</span> · 1216人正在看</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./images/course05.png" alt="">
+                        <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                        <p><span>高级</span> · 1216人正在看</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./images/course06.png" alt="">
+                        <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                        <p><span>高级</span> · 1216人正在看</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./images/course07.png" alt="">
+                        <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                        <p><span>高级</span> · 1216人正在看</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./images/course08.png" alt="">
+                        <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                        <p><span>高级</span> · 1216人正在看</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./images/course07.png" alt="">
+                        <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                        <p><span>高级</span> · 1216人正在看</p>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 版权区域 TODO-->
+
+</body>
+
+</html>
